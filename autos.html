@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style type="text/css">
+#contenedor {
+	background-color: #f4f4f4;
+	position: relative;
+	height: 557px;
+	width: 900px;
+	
+}
+#encabezado {
+    background-color: #333333;
+    position: absolute;
+    height: 205px;
+    width: 857px;
+    left: 20px;
+    top: 20px;
+    font-size: xx-large;
+    text-align: center;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	color: #ffffff;
+	}
+#menu {
+    background-color: #555555;
+    position: absolute;
+    height: 315px;
+    width: 265px;
+    left: 20px;
+    top: 224px;
+    text-align: center;
+    font-size: xx-large;
+	color: #ffffff;
+}
+#contenido {
+    background-color: #ffffff;
+    position: absolute;
+    height: 315px;
+    width: 593px;
+    left: 285px;
+    top: 224px;
+	color: #333333; 
+}
+.lista {
+}
+a:link {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:visited {
+    color: #004080;
+}
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+#galeria {
+    margin: auto;
+    height: 100px;
+    width: 500px;
+    position: absolute;
+	left: 45px;
+}
+
+#imagen {
+    margin: auto;
+	height: 213px;
+    width: 500px;
+    position: absolute;
+    top: 100px;
+	left: 45px;
+	}
+
+#cont1 {
+    position: absolute;
+    height: 100px;
+    width: 120px;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+}
+#cont2 {
+    position: absolute;
+    height: 100px;
+    width: 120px;
+    left: 125px;
+    top: auto;
+    right: auto;
+    bottom: auto;
+}
+#cont3 {
+    height: 100px;
+    width: 120px;
+    position: absolute;
+    left: 250px;
+    top: auto;
+    right: auto;
+    bottom: auto;
+}
+#cont4 {
+    position: absolute;
+    left: 375px;
+    top: auto;
+    right: auto;
+    bottom: auto;
+}
+#cont4 {
+    height: 99px;
+    width: 120px;
+}
+#carro1 {
+    visibility: hidden;
+    position: absolute;
+}
+#carro2 {
+    visibility: hidden;    
+	position: absolute;
+}
+#carro3 {
+    visibility: hidden;
+	position: absolute;
+	}
+#carro4 {
+    visibility: hidden;
+	position: absolute;
+}
+</style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body>
+<div id="contenedor"></div>
+<div id="encabezado">
+  <div>
+    <h1>Autosell</h1>
+  </div>
+</div>
+<div id="menu">
+  <ul id="lista" style="text-align: left; color: #000000;"> 
+    <li><a href="index.html">Pagina principal</a></li>
+    <li><a href="autos.html">Autos</a></li>
+    <li><a href="contacto.html">Contacto</a></li> 
+  </ul> 
+	
+</div>
+<div id="contenido">
+
+  <div id="galeria">
+    <div id="cont1" onMouseOver="MM_showHideLayers('carro1','','show')" onMouseOut="MM_showHideLayers('carro1','','hide')"><img src="imagenes/auto1.jpg" alt="" width="120" height="100" /></div>
+    <div id="cont2" onMouseOver="MM_showHideLayers('carro2','','show')" onMouseOut="MM_showHideLayers('carro2','','hide')"><img src="imagenes/auto2.jpg" width="120" height="100" alt=""/></div>
+    <div id="cont3" onMouseOver="MM_showHideLayers('carro3','','show')" onMouseOut="MM_showHideLayers('carro3','','hide')"><img src="imagenes/auto3.jpg" width="120" height="100" alt=""/></div>
+    <div id="cont4" onMouseOver="MM_showHideLayers('carro4','','show')" onMouseOut="MM_showHideLayers('carro4','','hide')"><img src="imagenes/auto4.jpg" width="120" height="100" alt=""/></div>
+  </div>
+	
+  <div id="imagen">
+    <div id="carro1"><img src="imagenes/auto1.jpg" width="495" height="200" alt=""/></div>
+    <div id="carro2"><img src="imagenes/auto2.jpg" width="495" height="200" alt=""/></div>
+    <div id="carro3"><img src="imagenes/auto3.jpg" width="495" height="200" alt=""/></div>
+    <div id="carro4"><img src="imagenes/auto4.jpg" width="495" height="200" alt=""/></div>
+    
+	
+  </div>
+	
+	
+	</div>
+	
+	
+</body>
+</html>
